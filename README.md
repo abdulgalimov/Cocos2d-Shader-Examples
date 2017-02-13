@@ -7,3 +7,5 @@
 3. Outline
 4. Glow
 5. DropShadow
+
+[Demo](http://abdulgalimov.com/Cocos2d/Shader-Examples/#Demo)

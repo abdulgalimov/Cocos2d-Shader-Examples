@@ -36,9 +36,11 @@ void main(void) {
                 }
             }
             _alpha /= count;
+        } else {
+            _alpha = shadowColor.a;
         }
         _alpha = min(_alpha*threshold, 1.0) * alpha;
-        if (_alpha > 0.0) {
+        if (texColor.a+_alpha > 0.0) {
             outColor = vec4(red, green, blue, _alpha);
             outColor = outColor*(1.0-texColor.a) + texColor*texColor.a;
         } else {

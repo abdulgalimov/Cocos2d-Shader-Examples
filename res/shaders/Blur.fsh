@@ -5,8 +5,6 @@ uniform float ty;
 varying vec2 v_texCoord;
 
 void main(void) {
-    vec4 texColor = texture2D(CC_Texture0, v_texCoord);
-    //
     vec4 sumCoolor = texture2D(CC_Texture0, v_texCoord);
     if (radius > 0.0) {
         const float maxRadius = 20.0;
